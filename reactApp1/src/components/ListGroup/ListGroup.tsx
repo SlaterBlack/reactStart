@@ -1,4 +1,12 @@
 import { useState } from "react";
+import styles from "./ListGroup.module.css";
+import styled from "styled-components";
+
+const List = styled.ul`
+  list-style: none;
+`;
+const ListItem = styled.li`
+padding = 5px`;
 
 interface Props {
   items: string[];
@@ -12,10 +20,10 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
   return (
     <>
       <h1>{heading}</h1>
-      {items.length === 0 && <p>No items found</p>}
-      <ul className="list-group">
+      {items.length === 0 && <p>No it'ems found</p>}
+      <List className={styles.listGroup}>
         {items.map((item, index) => (
-          <li
+          <ListItem
             className={
               selectedIndex === index
                 ? "list-group-item active"
@@ -28,9 +36,9 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
             }}
           >
             {item}
-          </li>
+          </ListItem>
         ))}
-      </ul>
+      </List>
     </>
   );
 }
