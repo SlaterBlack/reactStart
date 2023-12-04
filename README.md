@@ -23,10 +23,11 @@ Assisted develpoment utalising Coding with Mosh courses, reactApp1 is created th
 #### Libaries/intallions throughout the course include:
 
 - node.js
-- npm install
 - npm install styled-components
 - npm install @types/styled-components
 - npm install bootstrap
 - npm install react-icons@4.7.1
+- npm install immer@9.0.19
+  - for simplifying update logic
 
 > React icon Names can be found at https://react-icons.github.io/react-icons/
