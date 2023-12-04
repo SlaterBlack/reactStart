@@ -5,8 +5,16 @@ import styled from "styled-components";
 const List = styled.ul`
   list-style: none;
 `;
-const ListItem = styled.li`
-padding = 5px`;
+
+interface ListItemProps {
+  active: boolean;
+}
+
+const ListItem = styled.li<ListItemProps>`
+padding = 5px 0;
+background: ${(props) => (props.active ? "blue" : "none")};
+color: ${(props) => (props.active ? "white" : "none")};
+`;
 
 interface Props {
   items: string[];
@@ -20,15 +28,11 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
   return (
     <>
       <h1>{heading}</h1>
-      {items.length === 0 && <p>No it'ems found</p>}
+      {items.length === 0 && <p>No item found</p>}
       <List className={styles.listGroup}>
         {items.map((item, index) => (
           <ListItem
-            className={
-              selectedIndex === index
-                ? "list-group-item active"
-                : "list-group-item"
-            }
+            active={index === selectedIndex}
             key={item}
             onClick={() => {
               setSelectedIndex(index);
