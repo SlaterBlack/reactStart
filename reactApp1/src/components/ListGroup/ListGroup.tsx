@@ -27,7 +27,7 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
 
   return (
     <>
-      <h1>{heading}</h1>
+      <h2>{heading}</h2>
       {items.length === 0 && <p>No item found</p>}
       <List className={styles.listGroup}>
         {items.map((item, index) => (

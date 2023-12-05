@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./LikeIcon.models.css";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
 interface Props {
@@ -14,8 +13,23 @@ const LikeIcon = ({ onClick }: Props) => {
     onClick();
   };
 
-  if (status) return <AiFillHeart color="pink" onClick={toggle} size="50" />;
-  return <AiOutlineHeart onClick={toggle} size="50" />;
+  if (status)
+    return (
+      <>
+        <br />
+        <h2>Like Icon</h2>
+        <AiFillHeart color="pink" onClick={toggle} size="50" />
+        <br />
+      </>
+    );
+  return (
+    <>
+      <br />
+      <h2>Like Icon</h2>
+      <AiOutlineHeart onClick={toggle} size="50" />
+      <br />
+    </>
+  );
 };
 
 export default LikeIcon;

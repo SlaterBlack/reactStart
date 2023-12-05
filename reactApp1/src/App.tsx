@@ -6,6 +6,8 @@ import LikeIcon from "./components/LikeIcon";
 import NavBar from "./components/NavBar";
 import Cart from "./components/cart";
 import ExpandableText from "./components/ExpandableText";
+import Form from "./components/form";
+import "./components/index.css";
 
 function App() {
   let items = ["New York", "Alaska", "South Africa", "Greece", "Paris"];
@@ -19,10 +21,13 @@ function App() {
 
   return (
     <div>
+      <h1>
+        <b>ReactApp1</b>
+      </h1>
       <NavBar cartItemsCount={cartItems.length} />
       <Cart cartItems={cartItems} onClick={() => setCartItems([])}></Cart>
       {alertVisible && (
-        <Alert onClose={() => setAlertVisibility(false)}>Hello World</Alert>
+        <Alert onClose={() => setAlertVisibility(false)}>Make it yellow</Alert>
       )}
       <Button colour="primary" onClick={() => setAlertVisibility(true)}>
         My Button
@@ -34,7 +39,7 @@ function App() {
       />
       <ListGroup
         items={items}
-        heading="Cities"
+        heading="City List"
         onSelectItem={handleSelectItem}
       />
       <ExpandableText maxChars={100}>
@@ -51,6 +56,7 @@ function App() {
         fuga asperiores corrupti modi necessitatibus deleniti ab, illo cum ipsa,
         fugiat animi mollitia!
       </ExpandableText>
+      <Form></Form>
     </div>
   );
 }

@@ -9,7 +9,7 @@ interface Props {
 const Cart = ({ cartItems, onClick }: Props) => {
   return (
     <>
-      <div>cart</div>
+      <h2>Shopping Cart</h2>
       <ul>
         {cartItems.map((item) => (
           <li key={item}>{item}</li>

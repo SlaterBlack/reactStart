@@ -2,6 +2,15 @@
 
 ## reactStart is a repository created to practice react code
 
+### Topics covered include:
+
+- Building components
+- Stylist components
+- Compnent state mangement
+- Building Forms
+  - 'div.mb3>label.form-label+input[type=number].form-control' can be used as a shortcut to generte a form with VSCode
+- Connecting to backends
+
 > ### To create an App environment, run the following command in the terminal
 >
 > - npm create vite@latest
@@ -16,14 +25,6 @@
 ### reactApp1 is developed through the use of typescriot coding.
 
 Assisted develpoment utalising Coding with Mosh courses, reactApp1 is created through following the React 18 for beginners course using typescript.
-
-#### Topics covered include:
-
-- Building components
-- Stylist components
-- Compnent state mangement
-- Building Forms
-- Connecting to backends
 
 #### Application was built using:
 

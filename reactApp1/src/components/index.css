@@ -1,0 +1,15 @@
+body {
+    padding: 20px;
+}
+h1{
+    border: 0;
+    padding: 3px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    text-align: center;
+}
+h2{
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+}
