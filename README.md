@@ -2,6 +2,17 @@
 
 ## reactStart is a repository created to practice react code
 
+> ### To create an App environment, run the following command in the terminal
+>
+> - npm create vite@latest
+> - y
+> - (Input project name)
+> - (Select React project)
+> - (Select typescript)
+> - cd (insert aproject name)
+> - npm install
+> - npm run dev
+
 ### reactApp1 is developed through the use of typescriot coding.
 
 Assisted develpoment utalising Coding with Mosh courses, reactApp1 is created through following the React 18 for beginners course using typescript.
